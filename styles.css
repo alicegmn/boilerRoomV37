@@ -1,0 +1,258 @@
+/*Min huvudstyling som är mobile first*/
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D99E6A;
+    font-size: 18px;
+}
+
+header {
+    background-color: #4DBF49;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 20px;
+
+    nav {
+        position: absolute;
+        text-align: right;
+        top: 0;
+        right: 0;
+    }
+}
+
+main {
+    position: relative;
+    top: 100px;
+    bottom: 10%;
+    padding: 0 0 0 20px;
+}
+
+a {
+    color: #A66641;
+    transition: ease-in;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    background-color: #A66641;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    a {
+        color: #4DBF49;
+    }
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    color: #A66641;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #A66641;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin-bottom: 50x;
+}
+
+article {
+        position: relative;
+        width: 80%;
+        color: #000;
+        background-color: #F2F2F2;
+        border: 5px;
+        border-style: solid;
+        border-radius: 30px;
+        border-color: #A66641;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+/*Ändringar i styling för iPads och tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    article {
+        position: absolute;
+        width: 40%;
+    }
+   
+
+    #blogpost1 {
+        left: 5%;
+        top: 50px;
+    }
+
+    #blogpost2 {
+        right: 5%;
+        top: 50px;
+    }
+
+    #blogpost3 {
+        left: 5%;
+        top: 300px;
+    }
+
+    #blogpost4 {
+        right: 5%;
+        top: 300px;
+    }
+
+    #blogpost5 {
+        left: 5%;
+        top: 550px;
+    }
+    
+    #blogpost6 {
+        right: 5%;
+        top: 550px;
+    }
+
+    #about {
+        position: absolute;
+        top: 800px;
+    }
+
+    #slideshow {
+        position: absolute;
+        top: 1000px;
+    }
+
+    
+}
+/*Ändringar i styling för mindre skärmare, laptops, större skärmar och */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    article {
+        position: absolute;
+        width: 30%;
+        height: 200px;
+    }
+
+    #blogpost1 {
+        left: 10%;
+        top: 100px;
+    }
+
+    #blogpost2 {
+        right: 10%;
+        top: 100px;
+    }
+
+    #blogpost3 {
+        left: 10%;
+        top: 350px;
+    }
+
+    #blogpost4 {
+        right: 10%;
+        top: 350px;
+    }
+
+    #blogpost5 {
+        left: 10%;
+        top: 600px;
+    }
+    
+    #blogpost6 {
+        right: 10%;
+        top: 600px;
+    }
+
+    #about {
+        position: absolute;
+        top: 800px;
+    }
+
+    #slideshow {
+        position: absolute;
+        top: 1000px;
+    }
+}
+
+/*Ändringar i styling för ännu större skärmar och TV*/
+@media screen and (min-width: 1201px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    main {
+        position: relative;
+    }
+
+    article {
+        position: absolute;
+        width: 25%;
+        height: auto;
+    }
+
+    #blogpost1 {
+        left: 5%;
+        top: 50px;
+    }
+
+    #blogpost2 {
+        left: 35%;
+        top: 50px;
+    }
+
+    #blogpost3 {
+        left: 65%;
+        top: 50px;
+    }
+
+    #blogpost4 {
+        left: 5%;
+        top: 500px;
+    }
+
+    #blogpost5 {
+        left: 35%;
+        top: 500px;
+    }
+    
+    #blogpost6 {
+        left: 65%;
+        top: 500px;
+    }
+
+    #about {
+        position: absolute;
+        top: 900px;
+    }
+
+    #slideshow {
+        position: absolute;
+        top: 1100px;
+    }
+
+}
